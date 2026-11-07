@@ -1,0 +1,23 @@
+# receipts.yaml — sidecar dataset bindings (example; this file is live).
+#
+# A bare stat claim ("31 subscriptions", "47 handoffs") is ⚠️ UNVERIFIABLE on
+# its own: the plugin refuses to guess which dataset backs it. A binding names
+# the dataset, and the claim graduates to ✅ (count matches) or ❌ (refuted
+# with the true count). Discovery order: $PWD/receipts.yaml, then
+# ~/.hermes/receipts.yaml — run the demo from this repo root and this file
+# is picked up automatically.
+
+- pattern: subscriptions
+  dataset: fixtures/subscriptions_fixture.csv
+  method: count_rows
+
+- pattern: amounts
+  dataset: fixtures/subscriptions_fixture.csv
+  method: count_rows
+  column: Amount
+  value: ""
+
+- pattern: waste
+  dataset: fixtures/subscriptions_fixture.csv
+  method: sum_column
+  column: Amount

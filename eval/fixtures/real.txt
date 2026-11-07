@@ -1,0 +1,3 @@
+# real fixture cited by corpus case c01 — must exist for the VERIFIED label to be true
+demo line A: the quick brown fixture
+demo line B: second line for content checks

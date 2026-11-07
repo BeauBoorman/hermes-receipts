@@ -1,0 +1,10 @@
+{"id": "c01-real-local-file", "text": "Verified on disk: ~/projects/hermes-receipts/eval/fixtures/real.txt carries the demo lines.", "expected": [{"claim": "~/projects/hermes-receipts/eval/fixtures/real.txt", "state": "VERIFIED"}]}
+{"id": "c02-fabricated-home-path", "text": "PROOF: ~/org/vault/sessions/handoffs.org shows the history.", "expected": [{"claim": "~/org/vault/sessions/handoffs.org", "state": "REFUTED"}]}
+{"id": "c03-reachable-url-not-content-checked", "text": "Prior art: https://hermes-agent.nousresearch.com/docs/user-guide/features/kanban ships in core.", "expected": [{"claim": "https://hermes-agent.nousresearch.com/docs/user-guide/features/kanban", "state": "LOCATABLE"}]}
+{"id": "c04-bare-stat-uncheckable", "text": "The log shows 47 handoffs in October.", "expected": [{"claim": "47 handoffs", "state": "UNVERIFIED"}]}
+{"id": "c05-api-route-must-not-refute", "text": "My own token, GET /channels/1560349780071415861 returned 21 overwrites.", "expected": [{"claim": "/channels/1560349780071415861", "state": "SKIPPED"}]}
+{"id": "c06-version-fraction-nag", "text": "We upgraded from v2.3.4/5 in one step and read section 3/4 of the manual.", "expected": [{"claim": "v2.3.4/5", "state": "SKIPPED"}, {"claim": "section 3/4", "state": "SKIPPED"}]}
+{"id": "c07-code-fence-skipped", "text": "The quoted pitch said:\n```\n~/org/vault/sessions/handoffs.org\n```\nwhich is why it failed.", "expected": [{"claim": "~/org/vault/sessions/handoffs.org", "state": "SKIPPED"}]}
+{"id": "c08-windows-path", "text": "On the Windows VM the log sits at C:\\logs\\x.log per the install notes.", "expected": [{"claim": "C:\\logs\\x.log", "state": "UNVERIFIED"}]}
+{"id": "c09-remote-var-path-guard", "text": "Server-side, /var/log/hackathon_probe_nonexistent.log records every dispatch.", "expected": [{"claim": "/var/log/hackathon_probe_nonexistent.log", "state": "UNVERIFIED"}]}
+{"id": "c10-quoted-path-with-space", "text": "The report lives at ~/projects/hermes receipts spec.md if the copy landed.", "expected": [{"claim": "~/projects/hermes receipts spec.md", "state": "REFUTED"}]}

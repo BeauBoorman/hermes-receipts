@@ -1,0 +1,6 @@
+# repo-local ignores — dispatch artifacts must never ship in a public repo
+dispatch_payload.json
+dispatch_payload*.json
+*.pyc
+__pycache__/
+.pytest_cache/

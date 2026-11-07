@@ -1,0 +1,170 @@
+[
+ {
+  "id": "c01-real-local-file",
+  "elapsed": 0.001048708989401348,
+  "expected": [
+   {
+    "claim": "~/projects/hermes-receipts/eval/fixtures/real.txt",
+    "state": "VERIFIED"
+   }
+  ],
+  "got": [
+   {
+    "claim": "~/projects/hermes-receipts/eval/fixtures/real.txt",
+    "state": "VERIFIED"
+   }
+  ]
+ },
+ {
+  "id": "c02-fabricated-home-path",
+  "elapsed": 0.0003975830040872097,
+  "expected": [
+   {
+    "claim": "~/org/vault/sessions/handoffs.org",
+    "state": "REFUTED"
+   }
+  ],
+  "got": [
+   {
+    "claim": "~/org/vault/sessions/handoffs.org",
+    "state": "REFUTED"
+   }
+  ]
+ },
+ {
+  "id": "c03-reachable-url-not-content-checked",
+  "elapsed": 0.14169916699756868,
+  "expected": [
+   {
+    "claim": "https://hermes-agent.nousresearch.com/docs/user-guide/features/kanban",
+    "state": "LOCATABLE"
+   }
+  ],
+  "got": [
+   {
+    "claim": "https://hermes-agent.nousresearch.com/docs/user-guide/features/kanban",
+    "state": "LOCATABLE"
+   }
+  ]
+ },
+ {
+  "id": "c04-bare-stat-uncheckable",
+  "elapsed": 0.0001367920049233362,
+  "expected": [
+   {
+    "claim": "47 handoffs",
+    "state": "UNVERIFIED"
+   }
+  ],
+  "got": [
+   {
+    "claim": "47 handoffs",
+    "state": "UNVERIFIED"
+   }
+  ]
+ },
+ {
+  "id": "c05-api-route-must-not-refute",
+  "elapsed": 6.891599332448095e-05,
+  "expected": [
+   {
+    "claim": "/channels/1560349780071415861",
+    "state": "SKIPPED"
+   }
+  ],
+  "got": [
+   {
+    "claim": "/channels/1560349780071415861",
+    "state": "SKIPPED"
+   }
+  ]
+ },
+ {
+  "id": "c06-version-fraction-nag",
+  "elapsed": 6.408299668692052e-05,
+  "expected": [
+   {
+    "claim": "v2.3.4/5",
+    "state": "SKIPPED"
+   },
+   {
+    "claim": "section 3/4",
+    "state": "SKIPPED"
+   }
+  ],
+  "got": [
+   {
+    "claim": "v2.3.4/5",
+    "state": "SKIPPED"
+   },
+   {
+    "claim": "section 3/4",
+    "state": "SKIPPED"
+   }
+  ]
+ },
+ {
+  "id": "c07-code-fence-skipped",
+  "elapsed": 5.862499529030174e-05,
+  "expected": [
+   {
+    "claim": "~/org/vault/sessions/handoffs.org",
+    "state": "SKIPPED"
+   }
+  ],
+  "got": [
+   {
+    "claim": "~/org/vault/sessions/handoffs.org",
+    "state": "SKIPPED"
+   }
+  ]
+ },
+ {
+  "id": "c08-windows-path",
+  "elapsed": 0.00044454199087340385,
+  "expected": [
+   {
+    "claim": "C:\\logs\\x.log",
+    "state": "UNVERIFIED"
+   }
+  ],
+  "got": [
+   {
+    "claim": "C:\\logs\\x.log",
+    "state": "UNVERIFIED"
+   }
+  ]
+ },
+ {
+  "id": "c09-remote-var-path-guard",
+  "elapsed": 0.00030287499248515815,
+  "expected": [
+   {
+    "claim": "/var/log/hackathon_probe_nonexistent.log",
+    "state": "UNVERIFIED"
+   }
+  ],
+  "got": [
+   {
+    "claim": "/var/log/hackathon_probe_nonexistent.log",
+    "state": "UNVERIFIED"
+   }
+  ]
+ },
+ {
+  "id": "c10-quoted-path-with-space",
+  "elapsed": 0.0002700000040931627,
+  "expected": [
+   {
+    "claim": "~/projects/hermes receipts spec.md",
+    "state": "REFUTED"
+   }
+  ],
+  "got": [
+   {
+    "claim": "~/projects/hermes receipts spec.md",
+    "state": "REFUTED"
+   }
+  ]
+ }
+]

@@ -1,0 +1,12 @@
+name: receipts
+version: "0.2.0"
+description: >-
+  Stamps every agent response with a RECEIPTS block: each filesystem path, URL
+  and stat the agent cites is probed live and marked verified / missing /
+  unverifiable. Transport-agnostic via the transform_llm_output hook.
+provides_tools:
+  - receipts_check
+provides_hooks:
+  - transform_llm_output
+requires_hermes: ">=0.22.0"
+author: Dev Design (fleet)
